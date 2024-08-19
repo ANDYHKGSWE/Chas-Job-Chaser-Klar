@@ -1,0 +1,113 @@
+.job-container {
+  width: 70vw;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-radius: 5px;
+  margin: 1.3rem 0;
+  position: relative;
+  box-shadow: 0px 4px 6px 4px rgba(91, 164, 162, 0.2);
+}
+@media only screen and (max-width: 375px) {
+  .job-container {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80vw;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+.job-container .logo {
+  display: flex;
+  align-items: center;
+  padding-right: 1.5rem;
+}
+@media only screen and (max-width: 375px) {
+  .job-container .logo {
+    position: absolute;
+    top: -2rem;
+  }
+  .job-container .logo img {
+    width: 4rem;
+    height: auto;
+  }
+}
+.job-container .left {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+@media only screen and (max-width: 375px) {
+  .job-container .left {
+    flex-grow: 0;
+    padding: 1.3rem 0;
+  }
+}
+.job-container .left .company .company-name {
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-right: 0.8rem;
+}
+.job-container .left .company .new,
+.job-container .left .company .featured {
+  color: var(--white);
+  background-color: var(--green);
+  border-radius: 1rem;
+  padding: 0.4rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-right: 0.8rem;
+}
+.job-container .left .company .featured {
+  background-color: var(--gold);
+}
+.job-container .left .position {
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: inline-block;
+  padding: 0.7rem 0;
+  cursor: pointer;
+}
+.job-container .left .position:hover {
+  color: var(--primary-color);
+}
+.job-container .left .details {
+  color: var(--dark);
+}
+.job-container .right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 375px) {
+  .job-container .right {
+    border-top: 1px solid var(--dark);
+    padding-top: 1rem;
+    justify-content: flex-start;
+  }
+}
+.job-container .right span {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  font-weight: 700;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.job-container .right span:not(:last-child) {
+  margin-right: 1rem;
+}
+.job-container .right span:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+@media only screen and (max-width: 375px) {
+  .job-container .right span {
+    margin-bottom: 1rem;
+  }
+}
+.job-container--borderLeft {
+  border-left: 5px solid var(--primary-color);
+}/*# sourceMappingURL=job.css.map */
